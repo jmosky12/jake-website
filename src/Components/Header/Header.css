@@ -1,0 +1,17 @@
+#headerButtons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navButton {
+  float: right;
+}
+
+header {
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
