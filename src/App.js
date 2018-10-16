@@ -26,12 +26,18 @@ class App extends Component {
   }
 
   render() {
+    const showMenuButton = this.state.showSideBar ? {display: 'none'} : {};
+    const showMenuOverlay = this.state.showSideBar ? {} : {display: 'none'};
     return (
       <Router>
         <div className="outer-container">
-          <img className="menu" src="https://image.flaticon.com/icons/svg/462/462998.svg" alt="menu" onClick={this.showSideBar} />
-          <Sidebar value={this.state.showSideBar} onChange={this.hideSideBar} />
+          <div className="menu-container" style={showMenuOverlay}>
+            <Sidebar value={this.state.showSideBar} onChange={this.hideSideBar} />
+            <div className="transparent-view" onClick={this.hideSideBar} />
+          </div>
           <div className="content-container">
+            <img className="menu" src="https://image.flaticon.com/icons/svg/462/462998.svg" alt="menu" style={showMenuButton} 
+              onClick={this.showSideBar} />
             <Route name="home" exact path="/" component={Home} />
             <Route name="music" exact path="/music" component={Music} />
             <Route name="movies" exact path="/movies" component={Movies} />

@@ -1,10 +1,13 @@
 .content-container {
 	height: 100%;
-	background-color: lightgreen;
+	margin: 50px;
+	background-color: aliceblue;
+	overflow: auto;
 }
 
 .outer-container {
 	height: 100%;
+	display: flow-root;
 }
 
 .menu {
@@ -14,5 +17,22 @@
 }
 
 .menu:hover {
+	cursor: pointer;
+}
+
+.menu-container {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	display: flex;
+}
+
+.transparent-view {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.transparent-view:hover {
 	cursor: pointer;
 }
