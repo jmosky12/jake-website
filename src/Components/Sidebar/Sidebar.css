@@ -5,10 +5,10 @@
 }
 
 .cancel-button {
-	height: 30px;
-	width: 30px;
+	height: 20px;
+	width: 20px;
 	float: right;
-	padding: 10px;
+	padding: 20px;
 }
 
 .cancel-button:hover {

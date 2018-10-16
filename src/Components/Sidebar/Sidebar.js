@@ -13,7 +13,7 @@ class Sidebar extends Component {
     const sidebarStyle = this.props.value ? {} : {display : 'none'};
     return (
       <div className="side-bar" style={sidebarStyle}>
-        <img className="cancel-button" alt="cancel" src="https://image.flaticon.com/icons/svg/60/60578.svg" onClick={this.cancelTouched} />
+        <img className="cancel-button" alt="cancel" src="https://image.flaticon.com/icons/svg/149/149158.svg" onClick={this.cancelTouched} />
         <Link className="link" to="/"><div className="sidebar-item">Home</div></Link>
         <Link className="link" to="/music"><div className="sidebar-item">Music</div></Link>
         <Link className="link" to="/movies"><div className="sidebar-item">Movies</div></Link>
