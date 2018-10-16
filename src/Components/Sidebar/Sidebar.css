@@ -1,7 +1,7 @@
 .side-bar {
 	height: 100%;
 	width: 25%;
-	background-color: lightblue;
+	background-color: antiquewhite;
 }
 
 .cancel-button {
@@ -23,7 +23,7 @@
 }
 
 .sidebar-item:hover {
-	background-color: lavender;
+	background-color: seashell;
 }
 
 .link {
