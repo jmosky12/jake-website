@@ -4,7 +4,7 @@ import './Technology.css';
 class Technology extends Component {
   render() {
     return (
-      <div>
+      <div className="tech-container">
         Technology
       </div>
     )

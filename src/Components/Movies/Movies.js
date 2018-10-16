@@ -4,7 +4,7 @@ import './Movies.css';
 class Movies extends Component {
   render() {
     return (
-      <div>
+      <div className="movies-container">
         Movies
       </div>
     )
